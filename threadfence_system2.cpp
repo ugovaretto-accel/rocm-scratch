@@ -26,12 +26,13 @@ THE SOFTWARE.
 #include <cassert>
 #include <string>
 #include <iostream>
+#include <algorithm>
 #include "hip/hip_runtime.h"
 #include "hip/device_functions.h"
 
 void passed(const std::string &msg)
 {
-    std::cout << "> " << msg << " - Passed" << std::endl;
+    std::cout <<  "> " << msg << " - Passed" << std::endl;
 }
 
 void failed(const std::string &msg)
@@ -60,8 +61,14 @@ __host__ __device__ void round_robin(const int id, const int num_dev, const int 
 {
     for (int i = 0; i < num_iter; i++)
     {
-        while (*flag % num_dev != id)
-            fence_system(); // invalid the cache for read
+       while (*flag % num_dev != id) {
+         
+          fence_system(); // invalid the cache for read
+       }
+       #ifdef __HIP_DEVICE_COMPILE__
+       if(*flag == id) printf("%d:", threadIdx.x);
+       #endif
+
         (*data)++;
         fence_system(); // make sure the store to data is sequenced before the store to flag
         (*flag)++;
@@ -72,7 +79,6 @@ __host__ __device__ void round_robin(const int id, const int num_dev, const int 
 __global__ void gpu_round_robin(const int id, const int num_dev, const int num_iter,
                                 volatile int *data, volatile int *flag)
 {
-    printf("ID: %d\n", id);
     round_robin(id, num_dev, num_iter, data, flag);
 }
 
@@ -129,7 +135,6 @@ int main()
             HIP_ASSERT(hipSetDevice(next_id - 1));
             hipLaunchKernelGGL(gpu_round_robin, dim_grid, dim_block, 0, 0x0, next_id, num_dev,
                                num_iter, data, flag);
-            HIP_ASSERT(hipDeviceSynchronize());
         }));
     }
 
@@ -138,10 +143,12 @@ int main()
         t.join();
     }
 
+    //for ()
+
     int expected_data = init_data + num_dev * num_iter;
     int expected_flag = num_dev * num_iter;
-    bool pass = *data == expected_data && *flag == expected_flag;
-    //std::cout << std::boolalpha << (*flag == expected_flag) << std::endl;
+
+    bool pass = (*data == expected_data) && (*flag == expected_flag);
 
     std::cout << "data:          " << *data << std::endl
               << "expected data: " << expected_data << std::endl

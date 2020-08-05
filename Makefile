@@ -5,12 +5,15 @@ endif
 HIP_PLATFORM=$(shell $(HIP_PATH)/bin/hipconfig --platform)
 HIPCC=$(HIP_PATH)/bin/hipcc
 
-SOURCES=threadfence_system.cpp
+#SOURCES=threadfence_system.cpp
 
-all: threadfence_system 
+all: threadfence_system threadfence_system2
 
-threadfence_system: $(SOURCES)
-	$(HIPCC) $(CXXFLAGS) $(SOURCES) -o $@.out
+threadfence_system: threadfence_system.cpp
+	$(HIPCC) $(CXXFLAGS) threadfence_system.cpp -o $@.out
+
+threadfence_system2: threadfence_system.cpp
+	$(HIPCC) $(CXXFLAGS) threadfence_system2.cpp -o $@.out
 
 clean:
-	rm -f *.o *.out
+	rm -f *.o *.out 
