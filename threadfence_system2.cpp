@@ -66,7 +66,7 @@ __host__ __device__ void round_robin(const int id, const int num_dev, const int 
           fence_system(); // invalid the cache for read
        }
        #ifdef __HIP_DEVICE_COMPILE__
-       if(*flag == id) printf("%d:", threadIdx.x);
+       if(*flag == id) printf("%d:", int(threadIdx.x));
        #endif
 
         (*data)++;

@@ -1,0 +1,66 @@
+Performing C++ SOURCE FILE Test HIP_CLANG_SUPPORTS_PARALLEL_JOBS failed with the following output:
+Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_868c1/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_868c1.dir/build.make CMakeFiles/cmTC_868c1.dir/build
+gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_868c1.dir/src.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -DHIP_CLANG_SUPPORTS_PARALLEL_JOBS   -parallel-jobs=1 -o CMakeFiles/cmTC_868c1.dir/src.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/src.cxx
+clang-11: error: unknown argument: '-parallel-jobs=1'
+gmake[1]: *** [CMakeFiles/cmTC_868c1.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_868c1/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1baac/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_1baac.dir/build.make CMakeFiles/cmTC_1baac.dir/build
+gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1baac.dir/CheckSymbolExists.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang    -o CMakeFiles/cmTC_1baac.dir/CheckSymbolExists.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1baac
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1baac.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_1baac.dir/CheckSymbolExists.c.o  -o cmTC_1baac 
+CMakeFiles/cmTC_1baac.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x19): undefined reference to `pthread_create'
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [cmTC_1baac] Error 1
+gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_1baac/fast] Error 2
+
+File /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_a030c/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_a030c.dir/build.make CMakeFiles/cmTC_a030c.dir/build
+gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a030c.dir/CheckFunctionExists.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a030c.dir/CheckFunctionExists.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a030c
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a030c.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a030c.dir/CheckFunctionExists.c.o  -o cmTC_a030c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [cmTC_a030c] Error 1
+gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_a030c/fast] Error 2
+
+

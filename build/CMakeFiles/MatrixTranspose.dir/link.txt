@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMatrixTranspose.a  CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o
+/usr/bin/ranlib libMatrixTranspose.a

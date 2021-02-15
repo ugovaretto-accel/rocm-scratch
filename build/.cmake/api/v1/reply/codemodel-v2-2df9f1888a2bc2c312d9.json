@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "first_rocm_cmake_project",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MatrixTranspose::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatrixTranspose-Debug-2ca06d32e0e9aceaa42c.json",
+					"name" : "MatrixTranspose",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hip_cmake_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hip_cmake_test-Debug-fbf8f7fd5f7d0a8fff5d.json",
+					"name" : "hip_cmake_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/g/g92/varetto1/projects/rocm-scratch/build",
+		"source" : "/g/g92/varetto1/projects/rocm-scratch"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

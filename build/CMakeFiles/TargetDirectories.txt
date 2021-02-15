@@ -1,0 +1,4 @@
+/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/edit_cache.dir
+/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/rebuild_cache.dir
+/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/hip_cmake_test.dir
+/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/MatrixTranspose.dir

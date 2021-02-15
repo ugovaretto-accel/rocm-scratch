@@ -1,21 +1,29 @@
 {
     "env": {
-      "myDefaultIncludePath": ["${workspaceFolder}"]
+        "myDefaultIncludePath": [
+            "${workspaceFolder}"
+        ]
     },
     "configurations": [
-      {
-        "name": "ROCm",
-        "intelliSenseMode": "clang-x64",
-        "includePath": ["${myDefaultIncludePath}", "/opt/rocm/hip/include"],
-        "compilerPath": "/opt/rocm/hip/bin/hipcc",
-        "cStandard": "c11",
-        "cppStandard": "c++17",
-        "browse": {
-          "path": ["${workspaceFolder}"],
-          "limitSymbolsToIncludedHeaders": true,
-          "databaseFilename": ""
+        {
+            "name": "ROCm",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${myDefaultIncludePath}",
+                "/opt/rocm/hip/include"
+            ],
+            "compilerPath": "/opt/rocm/hip/bin/hipcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compileCommands": "${workspaceFolder}/compile_commands.json"
         }
-      }
     ],
     "version": 4
-  }
+}
