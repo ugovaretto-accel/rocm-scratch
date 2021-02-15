@@ -8,14 +8,15 @@
 					"build" : ".",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.10"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -31,7 +32,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -39,16 +41,23 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "MatrixTranspose::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MatrixTranspose-Debug-2ca06d32e0e9aceaa42c.json",
-					"name" : "MatrixTranspose",
+					"id" : "hip_transpose::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hip_transpose-Debug-e1253444d4f276d34fb0.json",
+					"name" : "hip_transpose",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "hip_cmake_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hip_cmake_test-Debug-fbf8f7fd5f7d0a8fff5d.json",
-					"name" : "hip_cmake_test",
+					"id" : "matrix_transpose::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrix_transpose-Debug-eb62d3e0cbe4fd25e450.json",
+					"name" : "matrix_transpose",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "threadfence_system::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-threadfence_system-Debug-a98574957c35c0107c14.json",
+					"name" : "threadfence_system",
 					"projectIndex" : 0
 				}
 			]

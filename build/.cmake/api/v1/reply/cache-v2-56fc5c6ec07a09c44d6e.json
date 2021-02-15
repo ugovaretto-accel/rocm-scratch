@@ -1762,30 +1762,6 @@
 			"value" : "/opt/rocm-3.10.0/include"
 		},
 		{
-			"name" : "Project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/g/g92/varetto1/projects/rocm-scratch/build"
-		},
-		{
-			"name" : "Project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/g/g92/varetto1/projects/rocm-scratch"
-		},
-		{
 			"name" : "ROCM_PATH",
 			"properties" : 
 			[
@@ -1823,30 +1799,6 @@
 		},
 		{
 			"name" : "first_rocm_cmake_project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/g/g92/varetto1/projects/rocm-scratch"
-		},
-		{
-			"name" : "first_romc_cmake_project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/g/g92/varetto1/projects/rocm-scratch/build"
-		},
-		{
-			"name" : "first_romc_cmake_project_SOURCE_DIR",
 			"properties" : 
 			[
 				{

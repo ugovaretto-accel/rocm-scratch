@@ -1,0 +1,1 @@
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++  -g   CMakeFiles/threadfence_system2.dir/threadfence_system2.cpp.o  -o threadfence_system2  -L/opt/rocm/lib64 

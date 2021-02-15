@@ -54,4 +54,7 @@ CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /opt/rocm/hip/include
 CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /opt/rocm/hip/include/hip/nvcc_detail/hip_runtime_api.h
 CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /opt/rocm/hip/include/hip/nvcc_detail/hip_texture_types.h
 CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /opt/rocm/hip/include/hip/texture_types.h
+CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/../include/cuda_wrappers/algorithm
+CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/../include/cuda_wrappers/complex
+CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o: /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/../include/cuda_wrappers/new
 

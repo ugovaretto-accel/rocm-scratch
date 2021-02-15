@@ -315,12 +315,6 @@ HIP_VERSION:STRING=3.10.20465-f9876b8d
 //Path to a file.
 HSA_HEADER:PATH=/opt/rocm-3.10.0/include
 
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/g/g92/varetto1/projects/rocm-scratch/build
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/g/g92/varetto1/projects/rocm-scratch
-
 //Path to which ROCM has been installed
 ROCM_PATH:PATH=/opt/rocm
 
@@ -332,12 +326,6 @@ first_rocm_cmake_project_BINARY_DIR:STATIC=/g/g92/varetto1/projects/rocm-scratch
 
 //Value Computed by CMake
 first_rocm_cmake_project_SOURCE_DIR:STATIC=/g/g92/varetto1/projects/rocm-scratch
-
-//Value Computed by CMake
-first_romc_cmake_project_BINARY_DIR:STATIC=/g/g92/varetto1/projects/rocm-scratch/build
-
-//Value Computed by CMake
-first_romc_cmake_project_SOURCE_DIR:STATIC=/g/g92/varetto1/projects/rocm-scratch
 
 //The directory containing a CMake configuration file for hip.
 hip_DIR:PATH=/opt/rocm/hip/lib/cmake/hip

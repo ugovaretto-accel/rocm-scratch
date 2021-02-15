@@ -79,7 +79,7 @@ hip_cmake_test_EXTERNAL_OBJECTS =
 
 hip_cmake_test: CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o
 hip_cmake_test: CMakeFiles/hip_cmake_test.dir/build.make
-hip_cmake_test: libMatrixTranspose.a
+hip_cmake_test: libmatrix_transpose.a
 hip_cmake_test: /opt/rocm-3.10.0/hip/lib/libamdhip64.so.3.10.31000
 hip_cmake_test: CMakeFiles/hip_cmake_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hip_cmake_test"

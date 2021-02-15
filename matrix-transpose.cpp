@@ -2,30 +2,26 @@
 
 #include "hip/hip_runtime_api.h"
 #include "hip/hip_runtime.h"
-#define WIDTH 1024
 
-#define NUM (WIDTH * WIDTH)
+const size_t WIDTH = 1024;
+const size_t NUM = (WIDTH * WIDTH);
+const int THREADS_PER_BLOCK_X = 4;
+const int THREADS_PER_BLOCK_Y = 4;
+const int THREADS_PER_BLOCK_Z = 1;
 
-#define THREADS_PER_BLOCK_X 4
-#define THREADS_PER_BLOCK_Y 4
-#define THREADS_PER_BLOCK_Z 1
-
-// Device (Kernel) function, it must be void
 __global__ void
-__attribute__((visibility("default")))
-matrixTranspose(float* out, float* in, const int width) {
-    int x = hipBlockDim_x * hipBlockIdx_x + hipThreadIdx_x;
-    int y = hipBlockDim_y * hipBlockIdx_y + hipThreadIdx_y;
+MatrixTranspose(float* out, float* in, size_t width) {
+    size_t x = hipBlockDim_x * hipBlockIdx_x + hipThreadIdx_x;
+    size_t y = hipBlockDim_y * hipBlockIdx_y + hipThreadIdx_y;
 
     out[y * width + x] = in[x * width + y];
 
 }
 
-
-void exec(float* gpuTransposeMatrix, float* gpuMatrix, const int width) {
+void Exec(float* gpuTransposeMatrix, float* gpuMatrix, size_t width) {
     // Lauching kernel from host
     hipLaunchKernelGGL(
-        matrixTranspose,
+        MatrixTranspose,
         dim3(WIDTH / THREADS_PER_BLOCK_X, WIDTH / THREADS_PER_BLOCK_Y),
         dim3(THREADS_PER_BLOCK_X, THREADS_PER_BLOCK_Y), 0, 0,
         gpuTransposeMatrix, gpuMatrix, WIDTH);

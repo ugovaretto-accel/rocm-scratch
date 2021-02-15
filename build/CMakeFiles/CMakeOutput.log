@@ -12,6 +12,33 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 The C compiler identification is Clang, found in "/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/3.14.5/CompilerIdC/a.out"
 
+The system is: Linux - 3.10.0-1160.6.1.1chaos.ch6.x86_64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/tce/packages/clang/clang-11.0.0/bin/clang++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is Clang, found in "/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/tce/packages/clang/clang-11.0.0/bin/clang 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/3.14.5/CompilerIdC/a.out"
+
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/tce/packages/clang/clang-11.0.0/bin/clang++ 
 Build flags: 
@@ -28,25 +55,25 @@ The CXX compiler identification is Clang, found in "/g/g92/varetto1/projects/roc
 Determining if the C compiler works passed with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_30b6c/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_30b6c.dir/build.make CMakeFiles/cmTC_30b6c.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_f0fbc/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_f0fbc.dir/build.make CMakeFiles/cmTC_f0fbc.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_30b6c.dir/testCCompiler.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang    -o CMakeFiles/cmTC_30b6c.dir/testCCompiler.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_30b6c
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30b6c.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_30b6c.dir/testCCompiler.c.o  -o cmTC_30b6c 
+Building C object CMakeFiles/cmTC_f0fbc.dir/testCCompiler.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang    -o CMakeFiles/cmTC_f0fbc.dir/testCCompiler.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f0fbc
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0fbc.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_f0fbc.dir/testCCompiler.c.o  -o cmTC_f0fbc 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_5e4a2/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_5e4a2.dir/build.make CMakeFiles/cmTC_5e4a2.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_9bb10/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_9bb10.dir/build.make CMakeFiles/cmTC_9bb10.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang   -v -o CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang   -v -o CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c
 clang version 11.0.0
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -57,7 +84,7 @@ Candidate multilib: .;@m64
 Selected multilib: .;@m64
 Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d
  (in-process)
- "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o -x c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c
+ "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o -x c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c
 clang -cc1 version 11.0.0 based upon LLVM 11.0.0 default target x86_64-unknown-linux-gnu
 ignoring nonexistent directory "/include"
 #include "..." search starts here:
@@ -66,9 +93,9 @@ ignoring nonexistent directory "/include"
  /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include
  /usr/include
 End of search list.
-Linking C executable cmTC_5e4a2
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e4a2.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang     -v CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o  -o cmTC_5e4a2 
+Linking C executable cmTC_9bb10
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bb10.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang     -v CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o  -o cmTC_9bb10 
 clang version 11.0.0
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -78,7 +105,7 @@ Selected GCC installation: /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unkn
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
 Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d
- "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5e4a2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
+ "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9bb10 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -99,11 +126,11 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_5e4a2/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_5e4a2.dir/build.make CMakeFiles/cmTC_5e4a2.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_9bb10/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_9bb10.dir/build.make CMakeFiles/cmTC_9bb10.dir/build]
   ignore line: [gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang   -v -o CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang   -v -o CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [clang version 11.0.0]
   ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
@@ -116,7 +143,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d]
   ignore line: [ (in-process)]
-  ignore line: [ "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o -x c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [ "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o -x c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [clang -cc1 version 11.0.0 based upon LLVM 11.0.0 default target x86_64-unknown-linux-gnu]
   ignore line: [ignoring nonexistent directory "/include"]
   ignore line: [#include "..." search starts here:]
@@ -125,9 +152,9 @@ Parsed C implicit link information from above output:
   ignore line: [ /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [Linking C executable cmTC_5e4a2]
-  ignore line: [/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e4a2.dir/link.txt --verbose=1]
-  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang     -v CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o  -o cmTC_5e4a2 ]
+  ignore line: [Linking C executable cmTC_9bb10]
+  ignore line: [/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bb10.dir/link.txt --verbose=1]
+  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang     -v CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o  -o cmTC_9bb10 ]
   ignore line: [clang version 11.0.0]
   ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
@@ -139,7 +166,7 @@ Parsed C implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
   ignore line: [Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d]
-  link line: [ "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5e4a2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
+  link line: [ "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9bb10 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
     arg [/usr/tce/bin/ld] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -148,7 +175,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5e4a2] ==> ignore
+    arg [cmTC_9bb10] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o] ==> ignore
@@ -162,7 +189,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib] ==> dir [/usr/lib]
     arg [-L/usr/tce/packages/clang/clang-11.0.0/release/lib] ==> dir [/usr/tce/packages/clang/clang-11.0.0/release/lib]
     arg [-L/usr/tce/packages/gcc/gcc-4.9.3/lib64] ==> dir [/usr/tce/packages/gcc/gcc-4.9.3/lib64]
-    arg [CMakeFiles/cmTC_5e4a2.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_9bb10.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-rpath] ==> ignore
     arg [/usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64] ==> ignore
     arg [-lgcc] ==> lib [gcc]
@@ -196,14 +223,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_7d925/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_7d925.dir/build.make CMakeFiles/cmTC_7d925.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_4fb4c/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_4fb4c.dir/build.make CMakeFiles/cmTC_4fb4c.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d925.dir/feature_tests.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang   -std=c11 -o CMakeFiles/cmTC_7d925.dir/feature_tests.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7d925
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d925.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_7d925.dir/feature_tests.c.o  -o cmTC_7d925 
+Building C object CMakeFiles/cmTC_4fb4c.dir/feature_tests.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang   -std=c11 -o CMakeFiles/cmTC_4fb4c.dir/feature_tests.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4fb4c
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fb4c.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_4fb4c.dir/feature_tests.c.o  -o cmTC_4fb4c 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -216,14 +243,14 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_c32ec/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_c32ec.dir/build.make CMakeFiles/cmTC_c32ec.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_32f62/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_32f62.dir/build.make CMakeFiles/cmTC_32f62.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c32ec.dir/feature_tests.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang   -std=c99 -o CMakeFiles/cmTC_c32ec.dir/feature_tests.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c32ec
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c32ec.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_c32ec.dir/feature_tests.c.o  -o cmTC_c32ec 
+Building C object CMakeFiles/cmTC_32f62.dir/feature_tests.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang   -std=c99 -o CMakeFiles/cmTC_32f62.dir/feature_tests.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_32f62
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32f62.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_32f62.dir/feature_tests.c.o  -o cmTC_32f62 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -236,14 +263,14 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_015bc/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_015bc.dir/build.make CMakeFiles/cmTC_015bc.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_63634/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_63634.dir/build.make CMakeFiles/cmTC_63634.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_015bc.dir/feature_tests.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang   -std=c90 -o CMakeFiles/cmTC_015bc.dir/feature_tests.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_015bc
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_015bc.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_015bc.dir/feature_tests.c.o  -o cmTC_015bc 
+Building C object CMakeFiles/cmTC_63634.dir/feature_tests.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang   -std=c90 -o CMakeFiles/cmTC_63634.dir/feature_tests.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_63634
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63634.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_63634.dir/feature_tests.c.o  -o cmTC_63634 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -254,25 +281,25 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_22474/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_22474.dir/build.make CMakeFiles/cmTC_22474.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_9011e/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_9011e.dir/build.make CMakeFiles/cmTC_9011e.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_22474.dir/testCXXCompiler.cxx.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++     -o CMakeFiles/cmTC_22474.dir/testCXXCompiler.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_22474
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22474.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_22474.dir/testCXXCompiler.cxx.o  -o cmTC_22474 
+Building CXX object CMakeFiles/cmTC_9011e.dir/testCXXCompiler.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++     -o CMakeFiles/cmTC_9011e.dir/testCXXCompiler.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9011e
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9011e.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_9011e.dir/testCXXCompiler.cxx.o  -o cmTC_9011e 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_e7c5f/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_e7c5f.dir/build.make CMakeFiles/cmTC_e7c5f.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_a7c9e/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_a7c9e.dir/build.make CMakeFiles/cmTC_a7c9e.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -v -o CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -v -o CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 clang version 11.0.0
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -283,7 +310,7 @@ Candidate multilib: .;@m64
 Selected multilib: .;@m64
 Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d
  (in-process)
- "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+ "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 clang -cc1 version 11.0.0 based upon LLVM 11.0.0 default target x86_64-unknown-linux-gnu
 ignoring nonexistent directory "/include"
 #include "..." search starts here:
@@ -295,9 +322,9 @@ ignoring nonexistent directory "/include"
  /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include
  /usr/include
 End of search list.
-Linking CXX executable cmTC_e7c5f
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7c5f.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++      -v CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e7c5f 
+Linking CXX executable cmTC_a7c9e
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7c9e.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++      -v CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a7c9e 
 clang version 11.0.0
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -307,7 +334,7 @@ Selected GCC installation: /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unkn
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
 Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d
- "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e7c5f /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
+ "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a7c9e /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -334,11 +361,11 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_e7c5f/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_e7c5f.dir/build.make CMakeFiles/cmTC_e7c5f.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_a7c9e/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_a7c9e.dir/build.make CMakeFiles/cmTC_a7c9e.dir/build]
   ignore line: [gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -v -o CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -v -o CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [clang version 11.0.0]
   ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
@@ -351,7 +378,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d]
   ignore line: [ (in-process)]
-  ignore line: [ "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [ "/usr/tce/packages/clang/clang-11.0.0/release/bin/clang-11" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3 -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu -internal-isystem /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward -internal-isystem /usr/local/include -internal-isystem /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [clang -cc1 version 11.0.0 based upon LLVM 11.0.0 default target x86_64-unknown-linux-gnu]
   ignore line: [ignoring nonexistent directory "/include"]
   ignore line: [#include "..." search starts here:]
@@ -363,9 +390,9 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /usr/tce/packages/clang/clang-11.0.0/release/lib/clang/11.0.0/include]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [Linking CXX executable cmTC_e7c5f]
-  ignore line: [/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7c5f.dir/link.txt --verbose=1]
-  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang++      -v CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e7c5f ]
+  ignore line: [Linking CXX executable cmTC_a7c9e]
+  ignore line: [/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7c9e.dir/link.txt --verbose=1]
+  ignore line: [/usr/tce/packages/clang/clang-11.0.0/bin/clang++      -v CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a7c9e ]
   ignore line: [clang version 11.0.0]
   ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
@@ -377,7 +404,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
   ignore line: [Found HIP installation: /opt/rocm, version 3.10.20465-f9876b8d]
-  link line: [ "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e7c5f /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
+  link line: [ "/usr/tce/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a7c9e /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. -L/usr/tce/packages/clang/clang-11.0.0/release/bin/../lib -L/lib -L/usr/lib -L/usr/tce/packages/clang/clang-11.0.0/release/lib -L/usr/tce/packages/gcc/gcc-4.9.3/lib64 CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o -rpath /usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64 -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
     arg [/usr/tce/bin/ld] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -386,7 +413,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e7c5f] ==> ignore
+    arg [cmTC_a7c9e] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/usr/tce/packages/gcc/gcc-4.9.3/lib64/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o] ==> ignore
@@ -400,7 +427,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib] ==> dir [/usr/lib]
     arg [-L/usr/tce/packages/clang/clang-11.0.0/release/lib] ==> dir [/usr/tce/packages/clang/clang-11.0.0/release/lib]
     arg [-L/usr/tce/packages/gcc/gcc-4.9.3/lib64] ==> dir [/usr/tce/packages/gcc/gcc-4.9.3/lib64]
-    arg [CMakeFiles/cmTC_e7c5f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_a7c9e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-rpath] ==> ignore
     arg [/usr/tce/packages/clang/clang-11.0.0/release/lib:/usr/tce/packages/gcc/gcc-4.9.3/lib64] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
@@ -432,14 +459,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_1601f/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_1601f.dir/build.make CMakeFiles/cmTC_1601f.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_425f6/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_425f6.dir/build.make CMakeFiles/cmTC_425f6.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1601f.dir/feature_tests.cxx.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++2a -o CMakeFiles/cmTC_1601f.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1601f
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1601f.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_1601f.dir/feature_tests.cxx.o  -o cmTC_1601f 
+Building CXX object CMakeFiles/cmTC_425f6.dir/feature_tests.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++2a -o CMakeFiles/cmTC_425f6.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_425f6
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_425f6.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_425f6.dir/feature_tests.cxx.o  -o cmTC_425f6 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -505,14 +532,14 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_bf067/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_bf067.dir/build.make CMakeFiles/cmTC_bf067.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_8b310/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_8b310.dir/build.make CMakeFiles/cmTC_8b310.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bf067.dir/feature_tests.cxx.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++17 -o CMakeFiles/cmTC_bf067.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_bf067
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf067.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_bf067.dir/feature_tests.cxx.o  -o cmTC_bf067 
+Building CXX object CMakeFiles/cmTC_8b310.dir/feature_tests.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++17 -o CMakeFiles/cmTC_8b310.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8b310
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b310.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_8b310.dir/feature_tests.cxx.o  -o cmTC_8b310 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -578,14 +605,14 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_2bc1b/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_2bc1b.dir/build.make CMakeFiles/cmTC_2bc1b.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_a5350/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_a5350.dir/build.make CMakeFiles/cmTC_a5350.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2bc1b.dir/feature_tests.cxx.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_2bc1b.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2bc1b
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bc1b.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_2bc1b.dir/feature_tests.cxx.o  -o cmTC_2bc1b 
+Building CXX object CMakeFiles/cmTC_a5350.dir/feature_tests.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_a5350.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a5350
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5350.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_a5350.dir/feature_tests.cxx.o  -o cmTC_a5350 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -651,14 +678,14 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_7f891/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_7f891.dir/build.make CMakeFiles/cmTC_7f891.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_bd64b/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_bd64b.dir/build.make CMakeFiles/cmTC_bd64b.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7f891.dir/feature_tests.cxx.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_7f891.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7f891
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f891.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_7f891.dir/feature_tests.cxx.o  -o cmTC_7f891 
+Building CXX object CMakeFiles/cmTC_bd64b.dir/feature_tests.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_bd64b.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bd64b
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd64b.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_bd64b.dir/feature_tests.cxx.o  -o cmTC_bd64b 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -724,14 +751,14 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_19353/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_19353.dir/build.make CMakeFiles/cmTC_19353.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_ba4b7/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_ba4b7.dir/build.make CMakeFiles/cmTC_ba4b7.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_19353.dir/feature_tests.cxx.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_19353.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_19353
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19353.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_19353.dir/feature_tests.cxx.o  -o cmTC_19353 
+Building CXX object CMakeFiles/cmTC_ba4b7.dir/feature_tests.cxx.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_ba4b7.dir/feature_tests.cxx.o -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ba4b7
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba4b7.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang++       CMakeFiles/cmTC_ba4b7.dir/feature_tests.cxx.o  -o cmTC_ba4b7 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
@@ -795,28 +822,28 @@ gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFi
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_4b32c/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_4b32c.dir/build.make CMakeFiles/cmTC_4b32c.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_4c212/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_4c212.dir/build.make CMakeFiles/cmTC_4c212.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4b32c.dir/CheckIncludeFile.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang    -o CMakeFiles/cmTC_4b32c.dir/CheckIncludeFile.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_4b32c
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b32c.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_4b32c.dir/CheckIncludeFile.c.o  -o cmTC_4b32c 
+Building C object CMakeFiles/cmTC_4c212.dir/CheckIncludeFile.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang    -o CMakeFiles/cmTC_4c212.dir/CheckIncludeFile.c.o   -c /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4c212
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c212.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang      CMakeFiles/cmTC_4c212.dir/CheckIncludeFile.c.o  -o cmTC_4c212 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_8914d/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_8914d.dir/build.make CMakeFiles/cmTC_8914d.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_e8dfa/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_e8dfa.dir/build.make CMakeFiles/cmTC_e8dfa.dir/build
 gmake[1]: Entering directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8914d.dir/CheckFunctionExists.c.o
-/usr/tce/packages/clang/clang-11.0.0/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8914d.dir/CheckFunctionExists.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8914d
-/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8914d.dir/link.txt --verbose=1
-/usr/tce/packages/clang/clang-11.0.0/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8914d.dir/CheckFunctionExists.c.o  -o cmTC_8914d -lpthread 
+Building C object CMakeFiles/cmTC_e8dfa.dir/CheckFunctionExists.c.o
+/usr/tce/packages/clang/clang-11.0.0/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e8dfa.dir/CheckFunctionExists.c.o   -c /usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e8dfa
+/usr/tce/packages/cmake/cmake-3.14.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8dfa.dir/link.txt --verbose=1
+/usr/tce/packages/clang/clang-11.0.0/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e8dfa.dir/CheckFunctionExists.c.o  -o cmTC_e8dfa -lpthread 
 gmake[1]: Leaving directory `/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles/CMakeTmp'
 
 

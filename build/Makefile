@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /g/g92/varetto1/projects/rocm-scratch/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/tce/packages/cmake/cmake-3.14.5/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/tce/packages/cmake/cmake-3.14.5/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hip_cmake_test
+# Target rules for targets named threadfence_system
 
 # Build rule for target.
-hip_cmake_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hip_cmake_test
-.PHONY : hip_cmake_test
+threadfence_system: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threadfence_system
+.PHONY : threadfence_system
 
 # fast build rule for target.
-hip_cmake_test/fast:
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/build
-.PHONY : hip_cmake_test/fast
+threadfence_system/fast:
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/build
+.PHONY : threadfence_system/fast
 
 #=============================================================================
-# Target rules for targets named MatrixTranspose
+# Target rules for targets named hip_transpose
 
 # Build rule for target.
-MatrixTranspose: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MatrixTranspose
-.PHONY : MatrixTranspose
+hip_transpose: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hip_transpose
+.PHONY : hip_transpose
 
 # fast build rule for target.
-MatrixTranspose/fast:
-	$(MAKE) -f CMakeFiles/MatrixTranspose.dir/build.make CMakeFiles/MatrixTranspose.dir/build
-.PHONY : MatrixTranspose/fast
+hip_transpose/fast:
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/build
+.PHONY : hip_transpose/fast
+
+#=============================================================================
+# Target rules for targets named matrix_transpose
+
+# Build rule for target.
+matrix_transpose: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix_transpose
+.PHONY : matrix_transpose
+
+# fast build rule for target.
+matrix_transpose/fast:
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/build
+.PHONY : matrix_transpose/fast
 
 matrix-transpose-main.o: matrix-transpose-main.cpp.o
 
@@ -142,7 +155,7 @@ matrix-transpose-main.o: matrix-transpose-main.cpp.o
 
 # target to build an object file
 matrix-transpose-main.cpp.o:
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/matrix-transpose-main.cpp.o
 .PHONY : matrix-transpose-main.cpp.o
 
 matrix-transpose-main.i: matrix-transpose-main.cpp.i
@@ -151,7 +164,7 @@ matrix-transpose-main.i: matrix-transpose-main.cpp.i
 
 # target to preprocess a source file
 matrix-transpose-main.cpp.i:
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.i
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/matrix-transpose-main.cpp.i
 .PHONY : matrix-transpose-main.cpp.i
 
 matrix-transpose-main.s: matrix-transpose-main.cpp.s
@@ -160,8 +173,62 @@ matrix-transpose-main.s: matrix-transpose-main.cpp.s
 
 # target to generate assembly for a file
 matrix-transpose-main.cpp.s:
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.s
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/matrix-transpose-main.cpp.s
 .PHONY : matrix-transpose-main.cpp.s
+
+matrix-transpose.o: matrix-transpose.cpp.o
+
+.PHONY : matrix-transpose.o
+
+# target to build an object file
+matrix-transpose.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/matrix-transpose.cpp.o
+.PHONY : matrix-transpose.cpp.o
+
+matrix-transpose.i: matrix-transpose.cpp.i
+
+.PHONY : matrix-transpose.i
+
+# target to preprocess a source file
+matrix-transpose.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/matrix-transpose.cpp.i
+.PHONY : matrix-transpose.cpp.i
+
+matrix-transpose.s: matrix-transpose.cpp.s
+
+.PHONY : matrix-transpose.s
+
+# target to generate assembly for a file
+matrix-transpose.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/matrix-transpose.cpp.s
+.PHONY : matrix-transpose.cpp.s
+
+threadfence_system.o: threadfence_system.cpp.o
+
+.PHONY : threadfence_system.o
+
+# target to build an object file
+threadfence_system.cpp.o:
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/threadfence_system.cpp.o
+.PHONY : threadfence_system.cpp.o
+
+threadfence_system.i: threadfence_system.cpp.i
+
+.PHONY : threadfence_system.i
+
+# target to preprocess a source file
+threadfence_system.cpp.i:
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/threadfence_system.cpp.i
+.PHONY : threadfence_system.cpp.i
+
+threadfence_system.s: threadfence_system.cpp.s
+
+.PHONY : threadfence_system.s
+
+# target to generate assembly for a file
+threadfence_system.cpp.s:
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/threadfence_system.cpp.s
+.PHONY : threadfence_system.cpp.s
 
 # Help Target
 help:
@@ -169,13 +236,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hip_cmake_test"
-	@echo "... MatrixTranspose"
+	@echo "... edit_cache"
+	@echo "... threadfence_system"
+	@echo "... hip_transpose"
+	@echo "... matrix_transpose"
 	@echo "... matrix-transpose-main.o"
 	@echo "... matrix-transpose-main.i"
 	@echo "... matrix-transpose-main.s"
+	@echo "... matrix-transpose.o"
+	@echo "... matrix-transpose.i"
+	@echo "... matrix-transpose.s"
+	@echo "... threadfence_system.o"
+	@echo "... threadfence_system.i"
+	@echo "... threadfence_system.s"
 .PHONY : help
 
 

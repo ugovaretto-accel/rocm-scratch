@@ -26,8 +26,8 @@ THE SOFTWARE.
 #include <cassert>
 #include <string>
 #include <iostream>
-#include "hip/hip_runtime.h"
-#include "hip/device_functions.h"
+#include <hip/hip_runtime.h>
+#include <hip/device_functions.h>
 
 void passed(const std::string &msg)
 {
@@ -46,28 +46,40 @@ void warn(const std::string &msg)
 
 #define HIP_ASSERT(x) (assert((x) == hipSuccess))
 
-__host__ __device__ void fence_system()
-{
 #ifdef __HIP_DEVICE_COMPILE__
+__device__
+void threadfence() {
     __threadfence_system();
+}
 #else
+void threadfence() {
     std::atomic_thread_fence(std::memory_order_seq_cst);
+}
 #endif
-}
 
-__host__ __device__ void round_robin(const int id, const int num_dev, const int num_iter,
-                                     volatile int *data, volatile int *flag)
-{
-    for (int i = 0; i < num_iter; i++)
-    {
-        while (*flag % num_dev != id)
-            fence_system(); // invalid the cache for read
-        (*data)++;
-        fence_system(); // make sure the store to data is sequenced before the store to flag
-        (*flag)++;
-        fence_system(); // invalid the cache to flush out flag
-    }
-}
+
+__host__ __device__ void round_robin(const int id, const int num_dev, const int num_iter, 
+                 volatile int *data, volatile int *flag) 
+
+{ 
+
+    for (int i = 0; i < num_iter; i++) 
+    { 
+
+        while (*flag % num_dev != id) 
+            threadfence();  
+        (*data)++; 
+        threadfence();   
+
+        (*flag)++; 
+
+        threadfence();   
+
+    } 
+
+} 
+
+
 
 __global__ void gpu_round_robin(const int id, const int num_dev, const int num_iter,
                                 volatile int *data, volatile int *flag)

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "hip_cmake_test"
+			"path" : "hip_transpose"
 		}
 	],
 	"backtrace" : 1,
@@ -11,8 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
-			"target_include_directories"
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -26,19 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 80,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 85,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 81,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -49,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g   -fPIC"
+					"fragment" : "-g   -mllvm -amdgpu-early-inline-all=true -amdgpu-function-calls=false -xhip --cuda-gpu-arch=gfx900 --cuda-gpu-arch=gfx906 --cuda-gpu-arch=gfx908"
 				}
 			],
 			"defines" : 
@@ -65,14 +58,6 @@
 			],
 			"includes" : 
 			[
-				{
-					"backtrace" : 3,
-					"path" : "/opt/rocm/hip/include"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "/opt/rocm/hip/../include"
-				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
@@ -105,10 +90,10 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "MatrixTranspose::@6890427a1f51a3e7e1df"
+			"id" : "matrix_transpose::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "hip_cmake_test::@6890427a1f51a3e7e1df",
+	"id" : "hip_transpose::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -122,14 +107,14 @@
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/rocm/lib64:/opt/rocm-3.10.0/hip/lib:/opt/rocm/lib libMatrixTranspose.a /opt/rocm-3.10.0/hip/lib/libamdhip64.so.3.10.31000 -L/usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/../lib/linux -lclang_rt.builtins-x86_64 -Wl,-rpath-link,/opt/rocm/lib",
+				"fragment" : "-Wl,-rpath,/opt/rocm/lib64:/opt/rocm-3.10.0/hip/lib:/opt/rocm/lib libmatrix_transpose.a /opt/rocm-3.10.0/hip/lib/libamdhip64.so.3.10.31000 --hip-link --cuda-gpu-arch=gfx900 --cuda-gpu-arch=gfx906 --cuda-gpu-arch=gfx908 -L/usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/../lib/linux -lclang_rt.builtins-x86_64 -Wl,-rpath-link,/opt/rocm/lib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "hip_cmake_test",
-	"nameOnDisk" : "hip_cmake_test",
+	"name" : "hip_transpose",
+	"nameOnDisk" : "hip_transpose",
 	"paths" : 
 	{
 		"build" : ".",

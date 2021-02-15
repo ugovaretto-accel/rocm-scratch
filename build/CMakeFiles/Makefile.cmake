@@ -11,10 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
-  "CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o.cmake.pre-gen"
-  "CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o.depend"
-  "/opt/rocm/hip/cmake/FindHIP.cmake"
-  "/opt/rocm/hip/cmake/FindHIP/run_hipcc.cmake"
   "/opt/rocm/hip/lib/cmake/hip/hip-config-version.cmake"
   "/opt/rocm/hip/lib/cmake/hip/hip-config.cmake"
   "/opt/rocm/hip/lib/cmake/hip/hip-targets-release.cmake"
@@ -69,13 +65,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o.cmake.pre-gen"
-  "CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/hip_cmake_test.dir/DependInfo.cmake"
-  "CMakeFiles/MatrixTranspose.dir/DependInfo.cmake"
+  "CMakeFiles/threadfence_system.dir/DependInfo.cmake"
+  "CMakeFiles/hip_transpose.dir/DependInfo.cmake"
+  "CMakeFiles/matrix_transpose.dir/DependInfo.cmake"
   )

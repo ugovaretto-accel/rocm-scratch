@@ -153,7 +153,11 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/opt/rocm/hip/cmake/FindHIP.cmake"
+			"path" : "/opt/rocm/hip/lib/cmake/hip/hip-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/rocm/hip/lib/cmake/hip/hip-config.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -169,29 +173,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/rocm/hip/lib/cmake/hip/hip-config-version.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/rocm/hip/lib/cmake/hip/hip-config.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -276,18 +257,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/tce/packages/cmake/cmake-3.14.5/share/cmake/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "build/CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o.depend"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/rocm/hip/cmake/FindHIP/run_hipcc.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "build/CMakeFiles/MatrixTranspose.dir/MatrixTranspose_generated_matrix-transpose.cpp.o.cmake.pre-gen"
 		}
 	],
 	"kind" : "cmakeFiles",

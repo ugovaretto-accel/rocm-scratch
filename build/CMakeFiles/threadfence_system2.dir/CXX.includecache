@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/g/g92/varetto1/projects/rocm-scratch/threadfence_system2.cpp
+vector
+-
+atomic
+-
+thread
+-
+cassert
+-
+string
+-
+iostream
+-
+algorithm
+-
+hip/hip_runtime.h
+/g/g92/varetto1/projects/rocm-scratch/hip/hip_runtime.h
+hip/device_functions.h
+/g/g92/varetto1/projects/rocm-scratch/hip/device_functions.h
+

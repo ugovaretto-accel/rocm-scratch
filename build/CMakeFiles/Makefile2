@@ -65,76 +65,113 @@ CMAKE_SOURCE_DIR = /g/g92/varetto1/projects/rocm-scratch
 CMAKE_BINARY_DIR = /g/g92/varetto1/projects/rocm-scratch/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/hip_cmake_test.dir
+# Target rules for target CMakeFiles/threadfence_system.dir
 
 # All Build rule for target.
-CMakeFiles/hip_cmake_test.dir/all: CMakeFiles/MatrixTranspose.dir/all
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/depend
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles --progress-num=3,4 "Built target hip_cmake_test"
-.PHONY : CMakeFiles/hip_cmake_test.dir/all
+CMakeFiles/threadfence_system.dir/all:
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/depend
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles --progress-num=5,6 "Built target threadfence_system"
+.PHONY : CMakeFiles/threadfence_system.dir/all
 
 # Include target in all.
-all: CMakeFiles/hip_cmake_test.dir/all
+all: CMakeFiles/threadfence_system.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hip_cmake_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hip_cmake_test.dir/all
+CMakeFiles/threadfence_system.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/threadfence_system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 0
-.PHONY : CMakeFiles/hip_cmake_test.dir/rule
+.PHONY : CMakeFiles/threadfence_system.dir/rule
 
 # Convenience name for target.
-hip_cmake_test: CMakeFiles/hip_cmake_test.dir/rule
+threadfence_system: CMakeFiles/threadfence_system.dir/rule
 
-.PHONY : hip_cmake_test
-
-# clean rule for target.
-CMakeFiles/hip_cmake_test.dir/clean:
-	$(MAKE) -f CMakeFiles/hip_cmake_test.dir/build.make CMakeFiles/hip_cmake_test.dir/clean
-.PHONY : CMakeFiles/hip_cmake_test.dir/clean
+.PHONY : threadfence_system
 
 # clean rule for target.
-clean: CMakeFiles/hip_cmake_test.dir/clean
+CMakeFiles/threadfence_system.dir/clean:
+	$(MAKE) -f CMakeFiles/threadfence_system.dir/build.make CMakeFiles/threadfence_system.dir/clean
+.PHONY : CMakeFiles/threadfence_system.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/threadfence_system.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MatrixTranspose.dir
+# Target rules for target CMakeFiles/hip_transpose.dir
 
 # All Build rule for target.
-CMakeFiles/MatrixTranspose.dir/all:
-	$(MAKE) -f CMakeFiles/MatrixTranspose.dir/build.make CMakeFiles/MatrixTranspose.dir/depend
-	$(MAKE) -f CMakeFiles/MatrixTranspose.dir/build.make CMakeFiles/MatrixTranspose.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles --progress-num=1,2 "Built target MatrixTranspose"
-.PHONY : CMakeFiles/MatrixTranspose.dir/all
+CMakeFiles/hip_transpose.dir/all: CMakeFiles/matrix_transpose.dir/all
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/depend
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles --progress-num=1,2 "Built target hip_transpose"
+.PHONY : CMakeFiles/hip_transpose.dir/all
 
 # Include target in all.
-all: CMakeFiles/MatrixTranspose.dir/all
+all: CMakeFiles/hip_transpose.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MatrixTranspose.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MatrixTranspose.dir/all
+CMakeFiles/hip_transpose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hip_transpose.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 0
-.PHONY : CMakeFiles/MatrixTranspose.dir/rule
+.PHONY : CMakeFiles/hip_transpose.dir/rule
 
 # Convenience name for target.
-MatrixTranspose: CMakeFiles/MatrixTranspose.dir/rule
+hip_transpose: CMakeFiles/hip_transpose.dir/rule
 
-.PHONY : MatrixTranspose
-
-# clean rule for target.
-CMakeFiles/MatrixTranspose.dir/clean:
-	$(MAKE) -f CMakeFiles/MatrixTranspose.dir/build.make CMakeFiles/MatrixTranspose.dir/clean
-.PHONY : CMakeFiles/MatrixTranspose.dir/clean
+.PHONY : hip_transpose
 
 # clean rule for target.
-clean: CMakeFiles/MatrixTranspose.dir/clean
+CMakeFiles/hip_transpose.dir/clean:
+	$(MAKE) -f CMakeFiles/hip_transpose.dir/build.make CMakeFiles/hip_transpose.dir/clean
+.PHONY : CMakeFiles/hip_transpose.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/hip_transpose.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/matrix_transpose.dir
+
+# All Build rule for target.
+CMakeFiles/matrix_transpose.dir/all:
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/depend
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles --progress-num=3,4 "Built target matrix_transpose"
+.PHONY : CMakeFiles/matrix_transpose.dir/all
+
+# Include target in all.
+all: CMakeFiles/matrix_transpose.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/matrix_transpose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/matrix_transpose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /g/g92/varetto1/projects/rocm-scratch/build/CMakeFiles 0
+.PHONY : CMakeFiles/matrix_transpose.dir/rule
+
+# Convenience name for target.
+matrix_transpose: CMakeFiles/matrix_transpose.dir/rule
+
+.PHONY : matrix_transpose
+
+# clean rule for target.
+CMakeFiles/matrix_transpose.dir/clean:
+	$(MAKE) -f CMakeFiles/matrix_transpose.dir/build.make CMakeFiles/matrix_transpose.dir/clean
+.PHONY : CMakeFiles/matrix_transpose.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/matrix_transpose.dir/clean
 
 .PHONY : clean
 

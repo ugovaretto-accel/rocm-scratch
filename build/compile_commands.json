@@ -1,7 +1,17 @@
 [
 {
   "directory": "/g/g92/varetto1/projects/rocm-scratch/build",
-  "command": "/usr/tce/packages/clang/clang-11.0.0/bin/clang++  -D__HIP_PLATFORM_HCC__=1 -D__HIP_ROCclr__=1 -I/opt/rocm/hip/include -I/opt/rocm/hip/../include -isystem /opt/rocm-3.10.0/hip/../include -isystem /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/.. -isystem /opt/rocm-3.10.0/hip/include -isystem /opt/rocm-3.10.0/include  -g   -fPIC -o CMakeFiles/hip_cmake_test.dir/matrix-transpose-main.cpp.o -c /g/g92/varetto1/projects/rocm-scratch/matrix-transpose-main.cpp",
+  "command": "/usr/tce/packages/clang/clang-11.0.0/bin/clang++  -D__HIP_PLATFORM_HCC__=1 -D__HIP_ROCclr__=1 -isystem /opt/rocm-3.10.0/hip/../include -isystem /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/.. -isystem /opt/rocm-3.10.0/hip/include -isystem /opt/rocm-3.10.0/include  -g   -mllvm -amdgpu-early-inline-all=true -amdgpu-function-calls=false -xhip --cuda-gpu-arch=gfx900 --cuda-gpu-arch=gfx906 --cuda-gpu-arch=gfx908 -o CMakeFiles/threadfence_system.dir/threadfence_system.cpp.o -c /g/g92/varetto1/projects/rocm-scratch/threadfence_system.cpp",
+  "file": "/g/g92/varetto1/projects/rocm-scratch/threadfence_system.cpp"
+},
+{
+  "directory": "/g/g92/varetto1/projects/rocm-scratch/build",
+  "command": "/usr/tce/packages/clang/clang-11.0.0/bin/clang++  -D__HIP_PLATFORM_HCC__=1 -D__HIP_ROCclr__=1 -isystem /opt/rocm-3.10.0/hip/../include -isystem /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/.. -isystem /opt/rocm-3.10.0/hip/include -isystem /opt/rocm-3.10.0/include  -g   -mllvm -amdgpu-early-inline-all=true -amdgpu-function-calls=false -xhip --cuda-gpu-arch=gfx900 --cuda-gpu-arch=gfx906 --cuda-gpu-arch=gfx908 -o CMakeFiles/hip_transpose.dir/matrix-transpose-main.cpp.o -c /g/g92/varetto1/projects/rocm-scratch/matrix-transpose-main.cpp",
   "file": "/g/g92/varetto1/projects/rocm-scratch/matrix-transpose-main.cpp"
+},
+{
+  "directory": "/g/g92/varetto1/projects/rocm-scratch/build",
+  "command": "/usr/tce/packages/clang/clang-11.0.0/bin/clang++  -D__HIP_PLATFORM_HCC__=1 -D__HIP_ROCclr__=1 -isystem /opt/rocm-3.10.0/hip/../include -isystem /usr/tce/packages/clang/clang-11.0.0/lib/clang/11.0.0/include/.. -isystem /opt/rocm-3.10.0/hip/include -isystem /opt/rocm-3.10.0/include  -g   -mllvm -amdgpu-early-inline-all=true -amdgpu-function-calls=false -xhip --cuda-gpu-arch=gfx900 --cuda-gpu-arch=gfx906 --cuda-gpu-arch=gfx908 -o CMakeFiles/matrix_transpose.dir/matrix-transpose.cpp.o -c /g/g92/varetto1/projects/rocm-scratch/matrix-transpose.cpp",
+  "file": "/g/g92/varetto1/projects/rocm-scratch/matrix-transpose.cpp"
 }
 ]
