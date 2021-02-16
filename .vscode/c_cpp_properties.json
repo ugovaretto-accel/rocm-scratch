@@ -22,7 +22,8 @@
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
-            "compileCommands": "${workspaceFolder}/compile_commands.json"
+            "compileCommands": "${workspaceFolder}/compile_commands.json",
+            "configurationProvider": "go2sh.cmake-integration"
         }
     ],
     "version": 4

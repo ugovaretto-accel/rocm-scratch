@@ -4,8 +4,8 @@ project(first_rocm_cmake_project)
 list(APPEND CMAKE_PREFIX_PATH /opt/rocm/hip /opt/rocm)
 find_package(hip REQUIRED)
 
-set(CMAKE_C_COMPILER=clang)
-set(CMAKE_CXX_COMPILER=clang++)
+#set(CMAKE_C_COMPILER=clang)
+#set(CMAKE_CXX_COMPILER=clang++)
 #required to search for libamd_comgr.so.1 and libhsakmt.so.1
 link_directories(${ROCM_PATH}/lib64)
 
@@ -22,4 +22,5 @@ add_executable(threadfence_system threadfence_system.cpp)
 #to automatically detect header path and libraries hip::device or hip::host
 #is required
 target_link_libraries(threadfence_system hip::device)
-# add_executable(threadfence_system2 threadfence_system2.cpp)
+
+add_executable(block-matmul block-matrix-mul.cpp)

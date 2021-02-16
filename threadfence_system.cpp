@@ -29,17 +29,17 @@ THE SOFTWARE.
 #include <hip/hip_runtime.h>
 #include <hip/device_functions.h>
 
-void passed(const std::string &msg)
+void passed(const std::string& msg)
 {
     std::cout << "> " << msg << " - Passed" << std::endl;
 }
 
-void failed(const std::string &msg)
+void failed(const std::string& msg)
 {
     std::cerr << "FAILED: " << msg << std::endl;
 }
 
-void warn(const std::string &msg)
+void warn(const std::string& msg)
 {
     std::cout << msg << std::endl;
 }
@@ -58,31 +58,31 @@ void threadfence() {
 #endif
 
 
-__host__ __device__ void round_robin(const int id, const int num_dev, const int num_iter, 
-                 volatile int *data, volatile int *flag) 
+__host__ __device__ void round_robin(const int id, const int num_dev, const int num_iter,
+    volatile int* data, volatile int* flag)
 
-{ 
+{
 
-    for (int i = 0; i < num_iter; i++) 
-    { 
+    for (int i = 0; i < num_iter; i++)
+    {
 
-        while (*flag % num_dev != id) 
-            threadfence();  
-        (*data)++; 
-        threadfence();   
+        while (*flag % num_dev != id)
+            threadfence();
+        (*data)++;
+        threadfence();
 
-        (*flag)++; 
+        (*flag)++;
 
-        threadfence();   
+        threadfence();
 
-    } 
+    }
 
-} 
+}
 
 
 
 __global__ void gpu_round_robin(const int id, const int num_dev, const int num_iter,
-                                volatile int *data, volatile int *flag)
+    volatile int* data, volatile int* flag)
 {
     printf("ID: %d\n", id);
     round_robin(id, num_dev, num_iter, data, flag);
@@ -99,7 +99,7 @@ int main()
         return 0;
     }
 
-    volatile int *data;
+    volatile int* data;
     if (hipHostMalloc(&data, sizeof(int), hipHostMallocCoherent) != hipSuccess)
     {
         warn("Memory allocation failed. Skip test. Is SVM atomic supported?");
@@ -109,7 +109,7 @@ int main()
     constexpr int init_data = 1000;
     *data = init_data;
 
-    volatile int *flag;
+    volatile int* flag;
     if (hipHostMalloc(&flag, sizeof(int), hipHostMallocCoherent) != hipSuccess)
     {
         warn("Memory allocation failed. Skip test. Is SVM atomic supported?");
@@ -140,12 +140,12 @@ int main()
         threads.push_back(std::thread([=]() {
             HIP_ASSERT(hipSetDevice(next_id - 1));
             hipLaunchKernelGGL(gpu_round_robin, dim_grid, dim_block, 0, 0x0, next_id, num_dev,
-                               num_iter, data, flag);
+                num_iter, data, flag);
             HIP_ASSERT(hipDeviceSynchronize());
-        }));
+            }));
     }
 
-    for (auto &t : threads)
+    for (auto& t : threads)
     {
         t.join();
     }
@@ -156,13 +156,13 @@ int main()
     //std::cout << std::boolalpha << (*flag == expected_flag) << std::endl;
 
     std::cout << "data:          " << *data << std::endl
-              << "expected data: " << expected_data << std::endl
-              << "flag:          " << *flag << std::endl
-              << "expected flag: " << expected_flag << std::endl;
+        << "expected data: " << expected_data << std::endl
+        << "flag:          " << *flag << std::endl
+        << "expected flag: " << expected_flag << std::endl;
 
     std::cout << "Freeing memory" << std::endl;
-    HIP_ASSERT(hipHostFree((void *)data));
-    HIP_ASSERT(hipHostFree((void *)flag));
+    HIP_ASSERT(hipHostFree((void*)data));
+    HIP_ASSERT(hipHostFree((void*)flag));
 
     if (pass)
     {

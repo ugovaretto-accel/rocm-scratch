@@ -1,3 +1,7 @@
 {
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: WebKit, ColumnLimit: 120, PointerAlignment: Left}"
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: WebKit, ColumnLimit: 120, PointerAlignment: Left}",
+  "files.associations": {
+    ".cu": "cpp",
+    "cassert": "cpp"
+  }
 }
